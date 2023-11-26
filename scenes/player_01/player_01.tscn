@@ -1,0 +1,51 @@
+[gd_scene load_steps=9 format=3 uid="uid://cnpy8whxn8d04"]
+
+[ext_resource type="Texture2D" uid="uid://pm4ta2qvsq5c" path="res://assets/plyaer_01/adventurer-run-00.png" id="1_ytkq3"]
+[ext_resource type="Texture2D" uid="uid://bdeslap062tsr" path="res://assets/plyaer_01/adventurer-run-01.png" id="2_si8x6"]
+[ext_resource type="Texture2D" uid="uid://hii8pcxlf3et" path="res://assets/plyaer_01/adventurer-run-02.png" id="3_62a84"]
+[ext_resource type="Texture2D" uid="uid://bie410hsu0whw" path="res://assets/plyaer_01/adventurer-run-03.png" id="4_r5xal"]
+[ext_resource type="Texture2D" uid="uid://ddfiokuxb43tj" path="res://assets/plyaer_01/adventurer-run-04.png" id="5_tuoy3"]
+[ext_resource type="Texture2D" uid="uid://5eli3nntfaiv" path="res://assets/plyaer_01/adventurer-run-05.png" id="6_xx038"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cn14e"]
+radius = 7.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0nxtj"]
+animations = [{
+"frames": [{
+"duration": 0.8,
+"texture": ExtResource("2_si8x6")
+}, {
+"duration": 0.8,
+"texture": ExtResource("1_ytkq3")
+}, {
+"duration": 0.8,
+"texture": ExtResource("3_62a84")
+}, {
+"duration": 0.8,
+"texture": ExtResource("4_r5xal")
+}, {
+"duration": 0.8,
+"texture": ExtResource("5_tuoy3")
+}, {
+"duration": 0.8,
+"texture": ExtResource("6_xx038")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
+[node name="Player_01" type="CharacterBody2D"]
+position = Vector2(-69, -44)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(69, 44)
+shape = SubResource("CapsuleShape2D_cn14e")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(66.75, 41)
+scale = Vector2(0.83, 0.837838)
+sprite_frames = SubResource("SpriteFrames_0nxtj")
+animation = &"run"
+frame_progress = 0.0611996
