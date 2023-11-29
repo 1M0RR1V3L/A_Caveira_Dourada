@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://4gr7rxk5y31f"
+path="res://.godot/imported/snippets.dialogue-0c2d363b99efa596c973efd0e477a95f.tres"
+
+[deps]
+
+source_file="res://scenes/introduction/snippets.dialogue"
+dest_files=["res://.godot/imported/snippets.dialogue-0c2d363b99efa596c973efd0e477a95f.tres"]
+
+[params]
+
+defaults=true

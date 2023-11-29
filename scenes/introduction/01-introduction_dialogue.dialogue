@@ -1,0 +1,20 @@
+~ talk_to_narrador
+
+Narrador: [speed=0.6][[|Olá tudo bem?|Olá, como vai?]] [wait=1]Eu sou o narrador dessa aventura.
+
+- Olá. eu vou bem obrigado.  => talk_to_vou_bem
+
+
+- Não muito bem, mas olá. => talk_to_nao_vou_bem
+
+~ talk_to_vou_bem
+
+Narrador: Fico feliz também.
+
+=> END
+
+~ talk_to_nao_vou_bem
+
+Narrador:[speed=0.2] Bem...[wait=2] [speed=0.6] Uma pena eu diria, porém vamos dar continuidade com a história.
+
+=> END
