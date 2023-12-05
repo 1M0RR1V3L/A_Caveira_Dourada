@@ -1,0 +1,35 @@
+~ talk_to_narrador
+
+Narrador: [speed=0.6][[|Olá tudo bem?|Olá, como vai?]] [wait=1]Eu sou o narrador dessa aventura.
+
+- Olá. eu vou bem obrigado.  => talk_to_vou_bem
+
+
+- Não muito bem, mas olá. => talk_to_nao_vou_bem
+
+~ talk_to_vou_bem
+
+Narrador: Fico feliz também.
+
+
+Narrador: [wait=0.8][speed=0.6]A aventura começa em uma pequena cidade pacata do interior do Ceará, onde surge rumores de uma gaita mágica capaz de 
+ressuscitar pessoas, e nessa história...[wait=0.5] bem...[wait=0.8] você é POBRE!.[wait=0.5] então você tem que encontrar a gaita[wait=0.5] e depois vender ela.
+
+Narrador: [wait=0.5] Pressione o botão no canto superior direito Skip to game para começar a aventura.
+
+
+=> END
+
+~ talk_to_nao_vou_bem
+
+Narrador:[speed=0.2] Bem...[wait=2] [speed=0.6] Uma pena eu diria, porém vamos dar continuidade com a história.
+
+
+Narrador: [wait=0.8][speed=0.6]A aventura começa em uma pequena cidade pacata do interior do Ceará, onde surge rumores de uma gaita mágica capaz de 
+ressuscitar pessoas, e nessa história...[wait=0.5] bem...[wait=0.8] você é POBRE!.[wait=0.5] então você tem que encontrar a gaita[wait=0.5] e depois vender ela.
+
+Narrador: [wait=0.5] Pressione o botão no canto superior direito Skip to game para começar a aventura.
+
+
+=> END!
+
