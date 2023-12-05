@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cisx7qgknpnjb"]
 
 [ext_resource type="Script" path="res://screens/menu.gd" id="1_8rrcn"]
-[ext_resource type="Texture2D" uid="uid://c3ej26wn5gwtm" path="res://assets/img/test_fundo.jpeg" id="2_8gbo1"]
+[ext_resource type="Texture2D" uid="uid://c3ej26wn5gwtm" path="res://img/test_fundo.jpeg" id="2_8gbo1"]
 
 [sub_resource type="Theme" id="Theme_mnli0"]
 
