@@ -1,12 +1,12 @@
 [gd_scene load_steps=12 format=3 uid="uid://bw7dm7u2yeeoy"]
 
-[ext_resource type="Texture2D" uid="uid://dyjta52raexen" path="res://PixelFantasy_Caves_1.0/props2.png" id="2_3m26x"]
-[ext_resource type="Texture2D" uid="uid://b1xmyvuoqn0kq" path="res://PixelFantasy_Caves_1.0/background1.png" id="2_hm6oq"]
-[ext_resource type="Texture2D" uid="uid://ddiy11f48a3sa" path="res://PixelFantasy_Caves_1.0/background2.png" id="3_76ri1"]
-[ext_resource type="Texture2D" uid="uid://yjq71c6ynnp" path="res://PixelFantasy_Caves_1.0/background3.png" id="5_60vvn"]
-[ext_resource type="Texture2D" uid="uid://bdmbw4dehs2so" path="res://PixelFantasy_Caves_1.0/background4a.png" id="6_43ysi"]
-[ext_resource type="Texture2D" uid="uid://ijsov64kg446" path="res://PixelFantasy_Caves_1.0/mainlev_build.png" id="6_jx1o5"]
-[ext_resource type="Texture2D" uid="uid://bkddaj5fejo17" path="res://PixelFantasy_Caves_1.0/background4b.png" id="7_imjys"]
+[ext_resource type="Texture2D" uid="uid://dyjta52raexen" path="res://img/PixelFantasy_Caves_1.0/props2.png" id="2_3m26x"]
+[ext_resource type="Texture2D" uid="uid://b1xmyvuoqn0kq" path="res://img/PixelFantasy_Caves_1.0/background1.png" id="2_hm6oq"]
+[ext_resource type="Texture2D" uid="uid://ddiy11f48a3sa" path="res://img/PixelFantasy_Caves_1.0/background2.png" id="3_76ri1"]
+[ext_resource type="Texture2D" uid="uid://yjq71c6ynnp" path="res://img/PixelFantasy_Caves_1.0/background3.png" id="5_60vvn"]
+[ext_resource type="Texture2D" uid="uid://bdmbw4dehs2so" path="res://img/PixelFantasy_Caves_1.0/background4a.png" id="6_43ysi"]
+[ext_resource type="Texture2D" uid="uid://ijsov64kg446" path="res://img/PixelFantasy_Caves_1.0/mainlev_build.png" id="6_jx1o5"]
+[ext_resource type="Texture2D" uid="uid://bkddaj5fejo17" path="res://img/PixelFantasy_Caves_1.0/background4b.png" id="7_imjys"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1gn3v"]
 texture = ExtResource("6_jx1o5")
@@ -211,7 +211,7 @@ texture = ExtResource("6_jx1o5")
 47:3/0 = 0
 47:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 47:3/0/physics_layer_0/angular_velocity = 0.0
-47:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+47:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.12652, -4.33103, -1.76777, -8, 8, -8, 8, 8, 1.59099, 8, -0.883883, 2.91681, -3.53553, 1.85616)
 48:3/0 = 0
 48:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 48:3/0/physics_layer_0/angular_velocity = 0.0
@@ -251,7 +251,7 @@ texture = ExtResource("6_jx1o5")
 57:3/0 = 0
 57:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 57:3/0/physics_layer_0/angular_velocity = 0.0
-57:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+57:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 0, -8, 3.53553, -6.0988, 5.48008, -3.8007, -0.883883, 8, -8, 8)
 60:3/0 = 0
 60:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 60:3/0/physics_layer_0/angular_velocity = 0.0
