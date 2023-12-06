@@ -33,6 +33,6 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-func _on_anim_animation_finished(anim_name):
+func _on_anim_animation_finished(anim_name) -> void:
 	if anim_name == "hurt":
-		anim.queue_free()
+		queue_free()

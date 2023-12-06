@@ -1,7 +1,6 @@
 extends Node2D
 
 func _ready():
-
 		var resource = preload("res://scripts/dialogue/introduction.dialogue")
 		DialogueManager.show_example_dialogue_balloon(\
 		\
