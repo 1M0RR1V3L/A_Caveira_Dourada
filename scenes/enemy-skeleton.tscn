@@ -1,13 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://b2bjf2mx17iaj"]
+[gd_scene load_steps=13 format=3 uid="uid://b2bjf2mx17iaj"]
 
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_sgrmn"]
 [ext_resource type="Texture2D" uid="uid://bgrgh3nb1ilxb" path="res://enemies/3 - Skeleton/Limping_Movement (32 x 32).png" id="2_qip2n"]
 [ext_resource type="Texture2D" uid="uid://degy6477ltaj6" path="res://enemies/3 - Skeleton/Hurt (32 x 32).png" id="3_lu0bl"]
 [ext_resource type="Texture2D" uid="uid://cj5d40ro56kl6" path="res://enemies/3 - Skeleton/Standing (32 x 32).png" id="4_4tmo0"]
+[ext_resource type="PackedScene" uid="uid://binqb4tv4fgt8" path="res://scenes/hitbox.tscn" id="5_1un5r"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jltgp"]
-radius = 6.0
-height = 18.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k1mj5"]
+radius = 9.64237
+height = 19.2847
 
 [sub_resource type="Animation" id="Animation_5mvmv"]
 length = 0.001
@@ -179,8 +180,12 @@ _data = {
 "walk": SubResource("Animation_rj7qt")
 }
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fxlp1"]
+size = Vector2(12.5351, 5.91877)
+
+[node name="enemy-skeleton" type="CharacterBody2D" groups=["enemies"]]
 position = Vector2(-18, 0)
+scale = Vector2(2.07418, 2.12065)
 collision_mask = 2
 script = ExtResource("1_sgrmn")
 
@@ -190,10 +195,10 @@ texture = ExtResource("2_qip2n")
 hframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(17, -9)
-shape = SubResource("CapsuleShape2D_jltgp")
+position = Vector2(17.3563, -10.3742)
+shape = SubResource("CapsuleShape2D_k1mj5")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="anim" type="AnimationPlayer" parent="."]
 autoplay = "walk"
 speed_scale = 0.5
 libraries = {
@@ -202,5 +207,14 @@ libraries = {
 
 [node name="wall_detector" type="RayCast2D" parent="."]
 position = Vector2(18, -11)
-target_position = Vector2(9, 0)
+target_position = Vector2(11, 0)
 collision_mask = 6
+
+[node name="hitbox" parent="." instance=ExtResource("5_1un5r")]
+
+[node name="collisiom" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(18.3205, -22.9352)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_fxlp1")
+
+[connection signal="animation_finished" from="anim" to="." method="_on_anim_animation_finished"]
