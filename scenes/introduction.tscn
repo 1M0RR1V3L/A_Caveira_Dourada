@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://dl6bvx01vp1fr"]
 
-[ext_resource type="Script" path="res://scenes/introduction.gd" id="1_gw326"]
-[ext_resource type="FontFile" uid="uid://dpwrasjjfpd48" path="res://screens/fonts/CLASSIC_.TTF" id="2_n8lpr"]
+[ext_resource type="Script" path="res://scripts/introduction.gd" id="1_gw326"]
+[ext_resource type="FontFile" uid="uid://dpwrasjjfpd48" path="res://fonts/CLASSIC_.TTF" id="2_n8lpr"]
 
 [sub_resource type="Theme" id="Theme_jy7i0"]
 
@@ -72,5 +72,5 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_bmrha")
 theme_override_styles/focus = SubResource("StyleBoxFlat_k8bni")
 text = "Skip to game"
 
-[connection signal="pressed" from="VBoxContainer/SkipButton" to="." method="_on_skip_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/SkipButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/SkipButton" to="." method="_on_skip_button_pressed"]

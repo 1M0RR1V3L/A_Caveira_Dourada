@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqsadsh66rlf5"]
+[gd_scene load_steps=4 format=3 uid="uid://dqsadsh66rlf5"]
 
-[ext_resource type="Texture2D" uid="uid://bfqis087rkup7" path="res://img/gameover-imagem.png" id="1_s856v"]
+[ext_resource type="Texture2D" uid="uid://coksr0n4nl3i0" path="res://img/game_over/gameover-imagem.png" id="1_s856v"]
+[ext_resource type="Script" path="res://screens/game_over.gd" id="1_v56uj"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7x0fr"]
 
@@ -11,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_v56uj")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
