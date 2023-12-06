@@ -1,6 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://cisx7qgknpnjb"]
 
 [ext_resource type="Script" path="res://screens/menu.gd" id="1_8rrcn"]
+
 [ext_resource type="Texture2D" uid="uid://li77qprr25x8" path="res://img/menu/background/origbig.png" id="2_7ubk2"]
 [ext_resource type="FontFile" uid="uid://dpwrasjjfpd48" path="res://screens/fonts/CLASSIC_.TTF" id="3_36o16"]
 [ext_resource type="AudioStream" uid="uid://d2vt6gsyerwvp" path="res://screens/sound/Hawkin - Woods.mp3" id="4_ol6ip"]
