@@ -1,9 +1,20 @@
-[gd_scene load_steps=20 format=3 uid="uid://cisx7qgknpnjb"]
+[gd_scene load_steps=28 format=3 uid="uid://cisx7qgknpnjb"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_8rrcn"]
-[ext_resource type="Texture2D" uid="uid://li77qprr25x8" path="res://img/menu/origbig.png" id="2_7ubk2"]
+[ext_resource type="Texture2D" uid="uid://dgwfg7feldloi" path="res://img/menu/1.png" id="2_4vlu0"]
+[ext_resource type="Shader" path="res://scripts/shaders/menu.gdshader" id="3_3ubh3"]
+[ext_resource type="Texture2D" uid="uid://c8ktfmj5cva05" path="res://img/menu/2.png" id="3_8ve4b"]
 [ext_resource type="FontFile" uid="uid://dpwrasjjfpd48" path="res://fonts/CLASSIC_.TTF" id="3_36o16"]
+[ext_resource type="Texture2D" uid="uid://4ybkjwqrxd5u" path="res://img/menu/3.png" id="4_3jp76"]
 [ext_resource type="AudioStream" uid="uid://d2vt6gsyerwvp" path="res://sound/Hawkin - Woods.mp3" id="4_ol6ip"]
+[ext_resource type="Texture2D" uid="uid://bnkhouaieexy7" path="res://img/menu/5.png" id="5_uba31"]
+[ext_resource type="Texture2D" uid="uid://4wr680kfox6u" path="res://img/menu/6.png" id="6_5dyxa"]
+[ext_resource type="Texture2D" uid="uid://dcftuxgji23tb" path="res://img/menu/7.png" id="7_0qhcm"]
+[ext_resource type="Texture2D" uid="uid://b8n5oli1hweei" path="res://img/menu/8.png" id="8_mvtum"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uiiaw"]
+shader = ExtResource("3_3ubh3")
+shader_parameter/move_speed = 0.02
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8dis"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -91,26 +102,71 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 alignment = 1
 
-[node name="background" type="Node2D" parent="VBoxContainer"]
-position = Vector2(-429.908, -222.777)
-scale = Vector2(0.789546, 0.882285)
+[node name="ParallaxBackground" type="ParallaxBackground" parent="VBoxContainer"]
 
-[node name="Background12" type="Sprite2D" parent="VBoxContainer/background"]
-position = Vector2(641.875, 364.75)
-scale = Vector2(0.558268, 0.562886)
-texture = ExtResource("2_7ubk2")
+[node name="BG-01" type="ParallaxLayer" parent="VBoxContainer/ParallaxBackground"]
 
-[node name="ColorRect" type="ColorRect" parent="VBoxContainer/background/Background12"]
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/ParallaxBackground/BG-01"]
+position = Vector2(-5, -5)
+scale = Vector2(2.23785, 2.24383)
+texture = ExtResource("2_4vlu0")
+centered = false
+
+[node name="BG-02" type="ParallaxLayer" parent="VBoxContainer/ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/ParallaxBackground/BG-02"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_uiiaw")
+scale = Vector2(2.23785, 2.19753)
+texture = ExtResource("3_8ve4b")
+centered = false
+
+[node name="BG-03" type="ParallaxLayer" parent="VBoxContainer/ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/ParallaxBackground/BG-03"]
+position = Vector2(0, -3)
+scale = Vector2(2.23437, 2.23765)
+texture = ExtResource("4_3jp76")
+centered = false
+
+[node name="BG-04" type="ParallaxLayer" parent="VBoxContainer/ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/ParallaxBackground/BG-04"]
+scale = Vector2(2.23785, 2.2284)
+texture = ExtResource("5_uba31")
+centered = false
+
+[node name="BG-05" type="ParallaxLayer" parent="VBoxContainer/ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/ParallaxBackground/BG-05"]
+scale = Vector2(2.24132, 2.2284)
+texture = ExtResource("6_5dyxa")
+centered = false
+
+[node name="BG-06" type="ParallaxLayer" parent="VBoxContainer/ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/ParallaxBackground/BG-06"]
+scale = Vector2(2.2309, 2.20679)
+texture = ExtResource("7_0qhcm")
+centered = false
+
+[node name="BG-07" type="ParallaxLayer" parent="VBoxContainer/ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/ParallaxBackground/BG-07"]
+scale = Vector2(2.22743, 2.25617)
+texture = ExtResource("8_mvtum")
+centered = false
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/ParallaxBackground/BG-07/Sprite2D"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1152.0
-offset_top = -648.0
-offset_right = -1152.0
-offset_bottom = -648.0
+offset_top = -1.0
+offset_right = 1.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.419608)
+color = Color(0, 0, 0, 0.498039)
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
