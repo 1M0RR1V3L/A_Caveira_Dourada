@@ -7,7 +7,7 @@
 script/source = "extends Control
 
 func _on_restart_bnt_pressed():
-	get_tree().change_scene_to_file(\"res://screens/menu.tscn\")
+	get_tree().change_scene_to_file(\"res://scenes/cemetery.tscn\")
 
 
 func _on_quit_bnt_pressed():
