@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ej26wn5gwtm"
-path="res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"
+uid="uid://chv5a3yjrifgb"
+path="res://.godot/imported/Basic Arrow.png-dcb707cea964a3c8436586c10d2b28da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/test_fundo.jpeg"
-dest_files=["res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"]
+source_file="res://img/player/Arrows/PNGs/Basic Arrow.png"
+dest_files=["res://.godot/imported/Basic Arrow.png-dcb707cea964a3c8436586c10d2b28da.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ej26wn5gwtm"
-path="res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"
+uid="uid://ckwnnpad1plvc"
+path="res://.godot/imported/Twitching_Idle (32 x 32).png-2decd9f71b9de944db2b84f298cc12e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/test_fundo.jpeg"
-dest_files=["res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"]
+source_file="res://enemies/3 - Skeleton/Twitching_Idle (32 x 32).png"
+dest_files=["res://.godot/imported/Twitching_Idle (32 x 32).png-2decd9f71b9de944db2b84f298cc12e4.ctex"]
 
 [params]
 

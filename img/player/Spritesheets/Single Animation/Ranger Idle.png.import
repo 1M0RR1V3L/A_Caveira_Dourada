@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ej26wn5gwtm"
-path="res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"
+uid="uid://ox1j1bl0dws"
+path="res://.godot/imported/Ranger Idle.png-c5a7ba01289826ae7154cf2f7fae86f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/test_fundo.jpeg"
-dest_files=["res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"]
+source_file="res://img/player/Spritesheets/Single Animation/Ranger Idle.png"
+dest_files=["res://.godot/imported/Ranger Idle.png-c5a7ba01289826ae7154cf2f7fae86f9.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ej26wn5gwtm"
-path="res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"
+uid="uid://dpnax65m2u76c"
+path="res://.godot/imported/Poison Arrow.png-a08b52bcf7908e1c3b3b11e4a76a47ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/test_fundo.jpeg"
-dest_files=["res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"]
+source_file="res://img/player/Arrows/PNGs/Poison Arrow.png"
+dest_files=["res://.godot/imported/Poison Arrow.png-a08b52bcf7908e1c3b3b11e4a76a47ea.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ej26wn5gwtm"
-path="res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"
+uid="uid://b6a43qxld06ns"
+path="res://.godot/imported/Ranger Shoot.png-3dcdfbd88405cbd5cab19cc7e9c51ff2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/test_fundo.jpeg"
-dest_files=["res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"]
+source_file="res://img/player/Spritesheets/Single Animation/Ranger Shoot.png"
+dest_files=["res://.godot/imported/Ranger Shoot.png-3dcdfbd88405cbd5cab19cc7e9c51ff2.ctex"]
 
 [params]
 

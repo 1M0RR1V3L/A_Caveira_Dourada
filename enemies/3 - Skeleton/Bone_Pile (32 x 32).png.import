@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ej26wn5gwtm"
-path="res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"
+uid="uid://c61v45ns1q5mr"
+path="res://.godot/imported/Bone_Pile (32 x 32).png-49fdcc2ace8f42b17ae7dbba7e546e0a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/test_fundo.jpeg"
-dest_files=["res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"]
+source_file="res://enemies/3 - Skeleton/Bone_Pile (32 x 32).png"
+dest_files=["res://.godot/imported/Bone_Pile (32 x 32).png-49fdcc2ace8f42b17ae7dbba7e546e0a.ctex"]
 
 [params]
 

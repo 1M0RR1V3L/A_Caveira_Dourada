@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ej26wn5gwtm"
-path="res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"
+uid="uid://byh4qtm8wv043"
+path="res://.godot/imported/Quick Arrow.png-597bf8a19f118601eb0da4211e32ba97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/test_fundo.jpeg"
-dest_files=["res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"]
+source_file="res://img/player/Arrows/PNGs/Quick Arrow.png"
+dest_files=["res://.godot/imported/Quick Arrow.png-597bf8a19f118601eb0da4211e32ba97.ctex"]
 
 [params]
 

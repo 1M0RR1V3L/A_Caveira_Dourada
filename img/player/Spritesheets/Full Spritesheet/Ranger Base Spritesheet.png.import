@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ej26wn5gwtm"
-path="res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"
+uid="uid://cgdsfrg2brb08"
+path="res://.godot/imported/Ranger Base Spritesheet.png-901f506d8ccf1522346ec79e938edb42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/test_fundo.jpeg"
-dest_files=["res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"]
+source_file="res://img/player/Spritesheets/Full Spritesheet/Ranger Base Spritesheet.png"
+dest_files=["res://.godot/imported/Ranger Base Spritesheet.png-901f506d8ccf1522346ec79e938edb42.ctex"]
 
 [params]
 

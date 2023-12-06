@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ej26wn5gwtm"
-path="res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"
+uid="uid://dg1c23mihl162"
+path="res://.godot/imported/Spinning_Bone (16 x 16).png-2da8df99802f8ce4a239ce4d6f146faf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/test_fundo.jpeg"
-dest_files=["res://.godot/imported/test_fundo.jpeg-b299acf27c92dd6cd664f7fff54b4391.ctex"]
+source_file="res://enemies/3 - Skeleton/Spinning_Bone (16 x 16).png"
+dest_files=["res://.godot/imported/Spinning_Bone (16 x 16).png-2da8df99802f8ce4a239ce4d6f146faf.ctex"]
 
 [params]
 
