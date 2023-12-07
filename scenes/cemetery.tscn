@@ -34,7 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://b0108p8f1tm5j" path="res://img/cemetery/PNG/Platformer/Ground_09.png" id="27_jp6s8"]
 [ext_resource type="Texture2D" uid="uid://dpi7b05ch62lv" path="res://img/cemetery/PNG/Objects/walls2.png" id="28_m82yq"]
 [ext_resource type="PackedScene" uid="uid://b2bjf2mx17iaj" path="res://characters/enemies/enemy-skeleton.tscn" id="29_7amyl"]
-[ext_resource type="PackedScene" uid="uid://cqvbo6bkeys6a" path="res://characters/player.tscn" id="30_fvsso"]
+[ext_resource type="PackedScene" uid="uid://cqvbo6bkeys6a" path="res://characters/player/player.tscn" id="30_fvsso"]
 [ext_resource type="Script" path="res://scripts/void.gd" id="32_pb5h5"]
 [ext_resource type="PackedScene" uid="uid://b1djeeeq62uke" path="res://scenes/goal.tscn" id="34_rclu1"]
 [ext_resource type="Shader" path="res://shader/transition.gdshader" id="37_ax0my"]
