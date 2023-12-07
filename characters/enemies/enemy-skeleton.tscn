@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b2bjf2mx17iaj"]
+[gd_scene load_steps=15 format=3 uid="uid://b2bjf2mx17iaj"]
 
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_sgrmn"]
 [ext_resource type="Texture2D" uid="uid://bgrgh3nb1ilxb" path="res://img/enemies/3 - Skeleton/Limping_Movement (32 x 32).png" id="2_qip2n"]
@@ -7,8 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://binqb4tv4fgt8" path="res://scenes/hitbox.tscn" id="5_1un5r"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k1mj5"]
-radius = 7.23173
-height = 20.2489
+radius = 5.41262
+height = 19.3006
 
 [sub_resource type="Animation" id="Animation_5mvmv"]
 length = 0.001
@@ -223,9 +223,12 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fxlp1"]
 size = Vector2(13.4993, 3.98778)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rhrcy"]
+size = Vector2(13.7397, 17.4874)
+
 [node name="enemy-skeleton" type="CharacterBody2D" groups=["enemies"]]
 position = Vector2(-18, 0)
-scale = Vector2(2.07418, 2.12065)
+scale = Vector2(2.40179, 2.76278)
 collision_mask = 23
 script = ExtResource("1_sgrmn")
 
@@ -236,7 +239,7 @@ texture = ExtResource("2_qip2n")
 hframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(17.3563, -10.3742)
+position = Vector2(18.3196, -10.8586)
 shape = SubResource("CapsuleShape2D_k1mj5")
 
 [node name="anim" type="AnimationPlayer" parent="."]
@@ -257,4 +260,13 @@ collision_mask = 6
 position = Vector2(17.8384, -25.1)
 shape = SubResource("RectangleShape2D_fxlp1")
 
+[node name="hurtbox" type="Area2D" parent="."]
+collision_layer = 32
+
+[node name="collision" type="CollisionShape2D" parent="hurtbox"]
+position = Vector2(18.1115, -10.1915)
+shape = SubResource("RectangleShape2D_rhrcy")
+debug_color = Color(0.960784, 0.105882, 0.419608, 0.419608)
+
 [connection signal="animation_finished" from="anim" to="." method="_on_anim_animation_finished"]
+[connection signal="body_entered" from="hurtbox" to="." method="_on_hurtbox_body_entered"]

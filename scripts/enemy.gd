@@ -36,3 +36,9 @@ func _physics_process(delta):
 func _on_anim_animation_finished(anim_name) -> void:
 	if anim_name == "hurt2":
 		queue_free()
+
+
+func _on_hurtbox_body_entered(body):
+	if body.name == "player":
+		owner.queue_free()
+		get_tree().change_scene_to_file("res://screens/game_over.tscn")
