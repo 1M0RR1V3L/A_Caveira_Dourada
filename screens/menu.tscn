@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://cisx7qgknpnjb"]
+[gd_scene load_steps=27 format=3 uid="uid://cisx7qgknpnjb"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_8rrcn"]
 [ext_resource type="Texture2D" uid="uid://dgwfg7feldloi" path="res://img/menu/1.png" id="2_4vlu0"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://4wr680kfox6u" path="res://img/menu/6.png" id="6_5dyxa"]
 [ext_resource type="Texture2D" uid="uid://dcftuxgji23tb" path="res://img/menu/7.png" id="7_0qhcm"]
 [ext_resource type="Texture2D" uid="uid://b8n5oli1hweei" path="res://img/menu/8.png" id="8_mvtum"]
+[ext_resource type="Theme" uid="uid://b588ktng63i4k" path="res://theme/theme_button.tres" id="11_bda3m"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_uiiaw"]
 shader = ExtResource("3_3ubh3")
@@ -34,28 +35,6 @@ RichTextLabel/colors/font_shadow_color = Color(0, 0, 0, 1)
 RichTextLabel/font_sizes/bold_font_size = 100
 RichTextLabel/styles/focus = SubResource("StyleBoxFlat_ktyha")
 RichTextLabel/styles/normal = SubResource("StyleBoxFlat_1prla")
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8dis"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2dsnr"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m7wwn"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mw0d7"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="Theme" id="Theme_blst4"]
-Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
-Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
-Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
-Button/fonts/font = ExtResource("3_36o16")
-Button/styles/disabled = SubResource("StyleBoxFlat_m8dis")
-Button/styles/focus = SubResource("StyleBoxFlat_2dsnr")
-Button/styles/hover = SubResource("StyleBoxFlat_m7wwn")
-Button/styles/normal = SubResource("StyleBoxFlat_mw0d7")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xcjug"]
 
@@ -202,7 +181,7 @@ tab_size = 24
 layout_mode = 2
 size_flags_horizontal = 0
 focus_neighbor_top = NodePath("../QuitButton")
-theme = SubResource("Theme_blst4")
+theme = ExtResource("11_bda3m")
 theme_type_variation = &"FlatButton"
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)

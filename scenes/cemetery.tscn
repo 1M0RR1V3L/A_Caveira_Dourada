@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://bd65poouwsk0s"]
+[gd_scene load_steps=63 format=3 uid="uid://bd65poouwsk0s"]
 
 [ext_resource type="Texture2D" uid="uid://cwn7wb5n14gru" path="res://img/cemetery/PNG/Background/Background_01.png" id="1_jpf7c"]
 [ext_resource type="Texture2D" uid="uid://ceqp3m85ei5wp" path="res://img/cemetery/PNG/Background/Background_02.png" id="2_812tl"]
@@ -30,8 +30,9 @@
 [ext_resource type="Texture2D" uid="uid://dv702ws8hy6ln" path="res://img/cemetery/PNG/Platformer/Ground_12.png" id="22_1vxlx"]
 [ext_resource type="Texture2D" uid="uid://doev1tgxaplet" path="res://img/cemetery/PNG/Objects/chain1.png" id="23_kxyv3"]
 [ext_resource type="PackedScene" uid="uid://b2bjf2mx17iaj" path="res://scenes/enemy-skeleton.tscn" id="29_7amyl"]
-[ext_resource type="PackedScene" uid="uid://cqvbo6bkeys6a" path="res://characters/player.tscn" id="30_fvsso"]
+[ext_resource type="PackedScene" uid="uid://cqvbo6bkeys6a" path="res://characters/player/player.tscn" id="30_fvsso"]
 [ext_resource type="Script" path="res://scripts/void.gd" id="32_pb5h5"]
+[ext_resource type="PackedScene" uid="uid://u8nu6xg2lxws" path="res://scenes/pause_menu.tscn" id="33_g712u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eclth"]
 texture = ExtResource("3_a24m4")
@@ -446,5 +447,7 @@ script = ExtResource("32_pb5h5")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(4817, 752.625)
 shape = SubResource("RectangleShape2D_ymxv2")
+
+[node name="pause_menu" parent="." instance=ExtResource("33_g712u")]
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

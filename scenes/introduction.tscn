@@ -2,8 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/introduction.gd" id="1_gw326"]
 [ext_resource type="FontFile" uid="uid://dpwrasjjfpd48" path="res://fonts/CLASSIC_.TTF" id="2_n8lpr"]
-
-[sub_resource type="Theme" id="Theme_jy7i0"]
+[ext_resource type="Theme" uid="uid://b588ktng63i4k" path="res://theme/theme_button.tres" id="2_ngrsj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p102b"]
 
@@ -61,7 +60,7 @@ offset_bottom = 653.0
 grow_horizontal = 2
 auto_translate = false
 localize_numeral_system = false
-theme = SubResource("Theme_jy7i0")
+theme = ExtResource("2_ngrsj")
 alignment = 1
 
 [node name="SkipButton" type="Button" parent="VBoxContainer"]
