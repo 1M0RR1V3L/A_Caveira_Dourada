@@ -16095,6 +16095,7 @@ layer_0/tile_data = PackedInt32Array(2097249, 65536, 18, 2097250, 786432, 25, 20
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 scale = Vector2(2, 2)
+motion_mirroring = Vector2(1280, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture = ExtResource("1_5sdv2")
@@ -16102,6 +16103,7 @@ centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 scale = Vector2(2, 2)
+motion_mirroring = Vector2(1280, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 texture = ExtResource("2_r01sw")
@@ -16109,6 +16111,7 @@ centered = false
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
 scale = Vector2(2, 2)
+motion_mirroring = Vector2(1280, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
 texture = ExtResource("3_a1cd5")
@@ -16121,4 +16124,4 @@ position = Vector2(7441.25, 791.5)
 shape = SubResource("RectangleShape2D_ey0d0")
 
 [node name="player" parent="." instance=ExtResource("7_57dgg")]
-position = Vector2(8689, 188)
+position = Vector2(202, 390)
