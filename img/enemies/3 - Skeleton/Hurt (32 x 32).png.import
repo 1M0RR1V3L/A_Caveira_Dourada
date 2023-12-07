@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj5d40ro56kl6"
-path="res://.godot/imported/Standing (32 x 32).png-c96a7f0376c36c0bc710aef4b1dd77ab.ctex"
+uid="uid://degy6477ltaj6"
+path="res://.godot/imported/Hurt (32 x 32).png-c0718eec5d18ea5badf10324c8236fe1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemies/3 - Skeleton/Standing (32 x 32).png"
-dest_files=["res://.godot/imported/Standing (32 x 32).png-c96a7f0376c36c0bc710aef4b1dd77ab.ctex"]
+source_file="res://img/enemies/3 - Skeleton/Hurt (32 x 32).png"
+dest_files=["res://.godot/imported/Hurt (32 x 32).png-c0718eec5d18ea5badf10324c8236fe1.ctex"]
 
 [params]
 

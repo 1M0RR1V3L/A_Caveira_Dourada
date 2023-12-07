@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnloqqy34w3s5"
-path="res://.godot/imported/Landed (32 x 32).png-4ec36e7a17ae58bb127efe8fde51fca3.ctex"
+uid="uid://cj0nv8kfglctb"
+path="res://.godot/imported/Standing_Idle (32 x 32).png-9d2da9f602dd65f2ea7fe6d3235a2b31.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemies/3 - Skeleton/Landed (32 x 32).png"
-dest_files=["res://.godot/imported/Landed (32 x 32).png-4ec36e7a17ae58bb127efe8fde51fca3.ctex"]
+source_file="res://img/enemies/3 - Skeleton/Standing_Idle (32 x 32).png"
+dest_files=["res://.godot/imported/Standing_Idle (32 x 32).png-9d2da9f602dd65f2ea7fe6d3235a2b31.ctex"]
 
 [params]
 

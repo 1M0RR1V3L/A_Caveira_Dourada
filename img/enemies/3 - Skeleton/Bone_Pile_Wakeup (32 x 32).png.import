@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj0nv8kfglctb"
-path="res://.godot/imported/Standing_Idle (32 x 32).png-f713b271294aecbe5b54a1628b5a87d4.ctex"
+uid="uid://dpj3rqaksqa4r"
+path="res://.godot/imported/Bone_Pile_Wakeup (32 x 32).png-62a8a84b7753f44163203bcd0c2ff245.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemies/3 - Skeleton/Standing_Idle (32 x 32).png"
-dest_files=["res://.godot/imported/Standing_Idle (32 x 32).png-f713b271294aecbe5b54a1628b5a87d4.ctex"]
+source_file="res://img/enemies/3 - Skeleton/Bone_Pile_Wakeup (32 x 32).png"
+dest_files=["res://.godot/imported/Bone_Pile_Wakeup (32 x 32).png-62a8a84b7753f44163203bcd0c2ff245.ctex"]
 
 [params]
 

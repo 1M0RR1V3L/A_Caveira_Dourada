@@ -189,7 +189,6 @@ color = Color(0, 0, 0, 0.498039)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ParallaxBackground"]
 clip_contents = false
-anchors_preset = -1
 offset_left = 426.0
 offset_top = 142.0
 offset_right = 840.0
