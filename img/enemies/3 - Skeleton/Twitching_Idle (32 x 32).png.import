@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhsmgtf4ca54q"
-path="res://.godot/imported/Jumping (32 x 32).png-ae277aa91d173bc85af7eebc63c400e7.ctex"
+uid="uid://ckwnnpad1plvc"
+path="res://.godot/imported/Twitching_Idle (32 x 32).png-3b58bad094f0fd828a92cfc90e4d513b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemies/3 - Skeleton/Jumping (32 x 32).png"
-dest_files=["res://.godot/imported/Jumping (32 x 32).png-ae277aa91d173bc85af7eebc63c400e7.ctex"]
+source_file="res://img/enemies/3 - Skeleton/Twitching_Idle (32 x 32).png"
+dest_files=["res://.godot/imported/Twitching_Idle (32 x 32).png-3b58bad094f0fd828a92cfc90e4d513b.ctex"]
 
 [params]
 

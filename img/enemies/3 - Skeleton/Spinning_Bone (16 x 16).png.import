@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://degy6477ltaj6"
-path="res://.godot/imported/Hurt (32 x 32).png-dd2ed87fafb2edef6ac95ed81e8dbd6a.ctex"
+uid="uid://dg1c23mihl162"
+path="res://.godot/imported/Spinning_Bone (16 x 16).png-c9ab62009681a5088ce0ead17e2ec0dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemies/3 - Skeleton/Hurt (32 x 32).png"
-dest_files=["res://.godot/imported/Hurt (32 x 32).png-dd2ed87fafb2edef6ac95ed81e8dbd6a.ctex"]
+source_file="res://img/enemies/3 - Skeleton/Spinning_Bone (16 x 16).png"
+dest_files=["res://.godot/imported/Spinning_Bone (16 x 16).png-c9ab62009681a5088ce0ead17e2ec0dc.ctex"]
 
 [params]
 

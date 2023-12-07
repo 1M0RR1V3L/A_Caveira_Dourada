@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpj3rqaksqa4r"
-path="res://.godot/imported/Bone_Pile_Wakeup (32 x 32).png-64cde5fdb3e36dd4215a2d365818974c.ctex"
+uid="uid://dhsmgtf4ca54q"
+path="res://.godot/imported/Jumping (32 x 32).png-631007103458582bd2336457f90fea54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemies/3 - Skeleton/Bone_Pile_Wakeup (32 x 32).png"
-dest_files=["res://.godot/imported/Bone_Pile_Wakeup (32 x 32).png-64cde5fdb3e36dd4215a2d365818974c.ctex"]
+source_file="res://img/enemies/3 - Skeleton/Jumping (32 x 32).png"
+dest_files=["res://.godot/imported/Jumping (32 x 32).png-631007103458582bd2336457f90fea54.ctex"]
 
 [params]
 

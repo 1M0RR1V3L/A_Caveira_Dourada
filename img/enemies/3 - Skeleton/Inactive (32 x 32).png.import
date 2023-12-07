@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctajo8sfktbww"
-path="res://.godot/imported/Preparing_Jump (32 x 32).png-f61c5eb51fecd9ace75735b8ef6be342.ctex"
+uid="uid://du5n2elgwjkam"
+path="res://.godot/imported/Inactive (32 x 32).png-f0e7324161422578e8706b69da15e4ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemies/3 - Skeleton/Preparing_Jump (32 x 32).png"
-dest_files=["res://.godot/imported/Preparing_Jump (32 x 32).png-f61c5eb51fecd9ace75735b8ef6be342.ctex"]
+source_file="res://img/enemies/3 - Skeleton/Inactive (32 x 32).png"
+dest_files=["res://.godot/imported/Inactive (32 x 32).png-f0e7324161422578e8706b69da15e4ef.ctex"]
 
 [params]
 

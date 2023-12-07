@@ -1,9 +1,9 @@
 [gd_scene load_steps=14 format=3 uid="uid://b2bjf2mx17iaj"]
 
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_sgrmn"]
-[ext_resource type="Texture2D" uid="uid://bgrgh3nb1ilxb" path="res://enemies/3 - Skeleton/Limping_Movement (32 x 32).png" id="2_qip2n"]
-[ext_resource type="Texture2D" uid="uid://b2p5wsbibqtkp" path="res://enemies/3 - Skeleton/Crumbling_Into_Bone_Pile (32 x 32).png" id="3_ujby4"]
-[ext_resource type="Texture2D" uid="uid://cj5d40ro56kl6" path="res://enemies/3 - Skeleton/Standing (32 x 32).png" id="4_4tmo0"]
+[ext_resource type="Texture2D" uid="uid://bgrgh3nb1ilxb" path="res://img/enemies/3 - Skeleton/Limping_Movement (32 x 32).png" id="2_qip2n"]
+[ext_resource type="Texture2D" uid="uid://b2p5wsbibqtkp" path="res://img/enemies/3 - Skeleton/Crumbling_Into_Bone_Pile (32 x 32).png" id="3_ujby4"]
+[ext_resource type="Texture2D" uid="uid://cj5d40ro56kl6" path="res://img/enemies/3 - Skeleton/Standing (32 x 32).png" id="4_4tmo0"]
 [ext_resource type="PackedScene" uid="uid://binqb4tv4fgt8" path="res://scenes/hitbox.tscn" id="5_1un5r"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k1mj5"]

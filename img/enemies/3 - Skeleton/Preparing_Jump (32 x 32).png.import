@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgrgh3nb1ilxb"
-path="res://.godot/imported/Limping_Movement (32 x 32).png-ee344c8a538a15fee0ccbd9ddbbacaf8.ctex"
+uid="uid://ctajo8sfktbww"
+path="res://.godot/imported/Preparing_Jump (32 x 32).png-e6769be826b86fb73200b188b44b49db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemies/3 - Skeleton/Limping_Movement (32 x 32).png"
-dest_files=["res://.godot/imported/Limping_Movement (32 x 32).png-ee344c8a538a15fee0ccbd9ddbbacaf8.ctex"]
+source_file="res://img/enemies/3 - Skeleton/Preparing_Jump (32 x 32).png"
+dest_files=["res://.godot/imported/Preparing_Jump (32 x 32).png-e6769be826b86fb73200b188b44b49db.ctex"]
 
 [params]
 

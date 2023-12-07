@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckwnnpad1plvc"
-path="res://.godot/imported/Twitching_Idle (32 x 32).png-2decd9f71b9de944db2b84f298cc12e4.ctex"
+uid="uid://bgrgh3nb1ilxb"
+path="res://.godot/imported/Limping_Movement (32 x 32).png-8b47fd62dd5a4503b7c279b6eea3d295.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemies/3 - Skeleton/Twitching_Idle (32 x 32).png"
-dest_files=["res://.godot/imported/Twitching_Idle (32 x 32).png-2decd9f71b9de944db2b84f298cc12e4.ctex"]
+source_file="res://img/enemies/3 - Skeleton/Limping_Movement (32 x 32).png"
+dest_files=["res://.godot/imported/Limping_Movement (32 x 32).png-8b47fd62dd5a4503b7c279b6eea3d295.ctex"]
 
 [params]
 
