@@ -1,0 +1,110 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5i6w7mseixcl"]
+
+[ext_resource type="Theme" uid="uid://bw1l2vtpwhonr" path="res://theme/theme-text-title.tres" id="1_3svgq"]
+[ext_resource type="Script" path="res://scripts/credits.gd" id="1_o1m0k"]
+[ext_resource type="Theme" uid="uid://btkegqcc6h8sx" path="res://theme/theme-text.tres" id="2_8q7cb"]
+[ext_resource type="Theme" uid="uid://b588ktng63i4k" path="res://theme/theme_button.tres" id="4_fw2yc"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o1m0k")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -1.0
+offset_right = 1278.0
+offset_bottom = 722.0
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -390.0
+offset_top = -275.0
+offset_right = 416.0
+offset_bottom = 295.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_3svgq")
+text = "CREDITS"
+fit_content = true
+autowrap_mode = 0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("1_3svgq")
+text = "Desenvolvedores"
+fit_content = true
+autowrap_mode = 0
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("2_8q7cb")
+text = "Lucas Sousa, Matheus Rabelo, Eric Mesquita e Robert Michael"
+fit_content = true
+autowrap_mode = 0
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("1_3svgq")
+text = "Agradecimentos"
+fit_content = true
+autowrap_mode = 0
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("2_8q7cb")
+text = "Professor e Orientador Artur Franco, agradecemos por todo o conhecimento e apoio. Profundamente gratos."
+fit_content = true
+autowrap_mode = 0
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("1_3svgq")
+text = "Plataformas que disponibilizaram os recursos"
+fit_content = true
+autowrap_mode = 0
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("2_8q7cb")
+text = "itch.Io, Pixabay e CRAFTPIX	"
+fit_content = true
+autowrap_mode = 0
+
+[node name="BackButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("4_fw2yc")
+text = "BACK TO MAIN MENU"
+
+[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
