@@ -12,7 +12,7 @@
 [ext_resource type="Script" path="res://scripts/transition.gd" id="10_4w02t"]
 [ext_resource type="Shader" path="res://shader/transition.gdshader" id="11_vptva"]
 [ext_resource type="Script" path="res://scripts/color_react.gd" id="12_uysyj"]
-[ext_resource type="PackedScene" uid="uid://b64rmxidd01lc" path="res://characters/enemies/enemy_ghost.tscn" id="13_3umkv"]
+[ext_resource type="PackedScene" uid="uid://dofwoj402bvsm" path="res://characters/enemies/enemy_ghost.tscn" id="13_3umkv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b2hbf"]
 texture = ExtResource("1_8qram")
@@ -1275,11 +1275,9 @@ texture = ExtResource("1_8qram")
 3:15/0 = 0
 3:15/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:15/0/physics_layer_0/angular_velocity = 0.0
-3:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:15/0 = 0
 4:15/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:15/0/physics_layer_0/angular_velocity = 0.0
-4:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:15/0 = 0
 5:15/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:15/0/physics_layer_0/angular_velocity = 0.0
@@ -1349,11 +1347,9 @@ texture = ExtResource("1_8qram")
 3:16/0 = 0
 3:16/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:16/0/physics_layer_0/angular_velocity = 0.0
-3:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:16/0 = 0
 4:16/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:16/0/physics_layer_0/angular_velocity = 0.0
-4:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:16/0 = 0
 5:16/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:16/0/physics_layer_0/angular_velocity = 0.0
@@ -1783,11 +1779,9 @@ texture = ExtResource("1_8qram")
 29:22/0 = 0
 29:22/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 29:22/0/physics_layer_0/angular_velocity = 0.0
-29:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 30:22/0 = 0
 30:22/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 30:22/0/physics_layer_0/angular_velocity = 0.0
-30:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 33:22/0 = 0
 33:22/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 33:22/0/physics_layer_0/angular_velocity = 0.0
@@ -1861,11 +1855,9 @@ texture = ExtResource("1_8qram")
 29:23/0 = 0
 29:23/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 29:23/0/physics_layer_0/angular_velocity = 0.0
-29:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 30:23/0 = 0
 30:23/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 30:23/0/physics_layer_0/angular_velocity = 0.0
-30:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 33:23/0 = 0
 33:23/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 33:23/0/physics_layer_0/angular_velocity = 0.0
@@ -5410,6 +5402,27 @@ texture = ExtResource("1_8qram")
 42:58/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 42:58/0/physics_layer_0/angular_velocity = 0.0
 42:58/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:24/0 = 0
+6:24/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:24/0/physics_layer_0/angular_velocity = 0.0
+7:23/0 = 0
+7:23/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:23/0/physics_layer_0/angular_velocity = 0.0
+7:22/0 = 0
+7:22/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:22/0/physics_layer_0/angular_velocity = 0.0
+6:21/0 = 0
+6:21/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:21/0/physics_layer_0/angular_velocity = 0.0
+4:21/0 = 0
+4:21/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:21/0/physics_layer_0/angular_velocity = 0.0
+4:22/0 = 0
+4:22/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:22/0/physics_layer_0/angular_velocity = 0.0
+4:23/0 = 0
+4:23/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:23/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_widp5"]
 texture = ExtResource("2_v4kxg")
@@ -16090,7 +16103,7 @@ shader_parameter/line_color_b = Color(0, 0.14902, 0, 1)
 [node name="Node2D" type="Node2D"]
 
 [node name="goal" parent="." instance=ExtResource("1_18mdv")]
-position = Vector2(14821, 590)
+position = Vector2(14824, 590)
 next_level = "res://scenes/cave.tscn"
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -16106,7 +16119,7 @@ position = Vector2(7441.25, 791.5)
 shape = SubResource("RectangleShape2D_ey0d0")
 
 [node name="player" parent="." instance=ExtResource("7_57dgg")]
-position = Vector2(156, 464)
+position = Vector2(130, 468)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 

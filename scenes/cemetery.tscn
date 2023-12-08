@@ -37,7 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://cqvbo6bkeys6a" path="res://characters/player/player.tscn" id="30_fvsso"]
 [ext_resource type="Script" path="res://scripts/void.gd" id="32_pb5h5"]
 [ext_resource type="PackedScene" uid="uid://b1djeeeq62uke" path="res://scenes/goal.tscn" id="34_rclu1"]
-[ext_resource type="PackedScene" uid="uid://b64rmxidd01lc" path="res://characters/enemies/enemy_ghost.tscn" id="37_0gdir"]
+[ext_resource type="PackedScene" uid="uid://dofwoj402bvsm" path="res://characters/enemies/enemy_ghost.tscn" id="37_0gdir"]
 [ext_resource type="Shader" path="res://shader/transition.gdshader" id="37_ax0my"]
 [ext_resource type="Script" path="res://scripts/transition.gd" id="37_rsopo"]
 [ext_resource type="Script" path="res://scripts/color_react.gd" id="38_7ksp2"]
@@ -655,12 +655,12 @@ position = Vector2(9865, 424)
 next_level = "res://scenes/forest.tscn"
 
 [node name="player" parent="." instance=ExtResource("30_fvsso")]
-position = Vector2(9590, 337)
+position = Vector2(286, 426)
 
 [node name="skeleton" type="Node2D" parent="."]
 
 [node name="enemy-skeleton" parent="skeleton" instance=ExtResource("29_7amyl")]
-position = Vector2(387, 415)
+position = Vector2(703, 421)
 
 [node name="enemy-skeleton2" parent="skeleton" instance=ExtResource("29_7amyl")]
 position = Vector2(1649, 279)
