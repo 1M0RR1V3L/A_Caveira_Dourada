@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://dl6bvx01vp1fr"]
+
+[ext_resource type="Script" path="res://scripts/introduction.gd" id="1_gw326"]
+[ext_resource type="Theme" uid="uid://b588ktng63i4k" path="res://theme/theme_button.tres" id="2_h7e36"]
+
+[sub_resource type="Theme" id="Theme_mu6bu"]
+
+[node name="Introduction" type="Node2D"]
+position = Vector2(1278, 3)
+script = ExtResource("1_gw326")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_direction = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -861.0
+offset_top = 491.0
+offset_right = -370.0
+offset_bottom = 665.0
+grow_horizontal = 2
+auto_translate = false
+localize_numeral_system = false
+theme = SubResource("Theme_mu6bu")
+alignment = 1
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_h7e36")
+text = "START"
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]

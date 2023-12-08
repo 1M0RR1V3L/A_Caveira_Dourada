@@ -1,0 +1,79 @@
+[gd_scene load_steps=12 format=3 uid="uid://1oka26leym5x"]
+
+[ext_resource type="Script" path="res://scripts/gaita.gd" id="1_2c0as"]
+[ext_resource type="Texture2D" uid="uid://igpboq4bksw6" path="res://img/cave/gaita.png" id="1_5lm7j"]
+[ext_resource type="Texture2D" uid="uid://cywumu6qckofb" path="res://img/items_ui/Effects/Yellow_Sparkle (16 x 16).png" id="2_0g6m7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u0n4b"]
+size = Vector2(28, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikf5e"]
+atlas = ExtResource("2_0g6m7")
+region = Rect2(0, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qopdv"]
+atlas = ExtResource("2_0g6m7")
+region = Rect2(20, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xw5ny"]
+atlas = ExtResource("2_0g6m7")
+region = Rect2(40, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wl4qs"]
+atlas = ExtResource("2_0g6m7")
+region = Rect2(60, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bocxo"]
+atlas = ExtResource("1_5lm7j")
+region = Rect2(26, 26, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xfihp"]
+atlas = ExtResource("1_5lm7j")
+region = Rect2(50, 50, 576, 576)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n5ntw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikf5e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qopdv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xw5ny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wl4qs")
+}],
+"loop": false,
+"name": &"collect",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bocxo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xfihp")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
+}]
+
+[node name="gaita" type="Area2D"]
+scale = Vector2(1.76596, 1.81633)
+script = ExtResource("1_2c0as")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_u0n4b")
+
+[node name="sprite" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.0547923, 0.0515974)
+sprite_frames = SubResource("SpriteFrames_n5ntw")
+animation = &"idle"
+autoplay = "idle"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="sprite" to="." method="_on_sprite_animation_finished"]

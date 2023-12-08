@@ -1,0 +1,108 @@
+[gd_scene load_steps=15 format=3 uid="uid://dqsadsh66rlf5"]
+
+[ext_resource type="Texture2D" uid="uid://coksr0n4nl3i0" path="res://img/game_over/gameover-imagem.png" id="1_s856v"]
+[ext_resource type="FontFile" uid="uid://dpwrasjjfpd48" path="res://fonts/CLASSIC_.TTF" id="2_k823i"]
+
+[sub_resource type="GDScript" id="GDScript_41fak"]
+script/source = "extends Control
+
+func _on_restart_bnt_pressed():
+	get_tree().change_scene_to_file(\"res://scenes/cemetery.tscn\")
+
+
+func _on_quit_bnt_pressed():
+	get_tree().quit()
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fq6hf"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ucrda"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62ij0"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lmqda"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Theme" id="Theme_nt7mn"]
+Button/fonts/font = ExtResource("2_k823i")
+Button/styles/disabled = SubResource("StyleBoxFlat_fq6hf")
+Button/styles/focus = SubResource("StyleBoxFlat_ucrda")
+Button/styles/hover = SubResource("StyleBoxFlat_62ij0")
+Button/styles/normal = SubResource("StyleBoxFlat_lmqda")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7x0fr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6iwjx"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r4gq3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_exxxi"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_km841"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Theme" id="Theme_tc43a"]
+Button/fonts/font = ExtResource("2_k823i")
+Button/styles/disabled = SubResource("StyleBoxFlat_6iwjx")
+Button/styles/focus = SubResource("StyleBoxFlat_r4gq3")
+Button/styles/hover = SubResource("StyleBoxFlat_exxxi")
+Button/styles/normal = SubResource("StyleBoxFlat_km841")
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_41fak")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -139.0
+offset_right = 100.0
+offset_bottom = 139.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s856v")
+
+[node name="Restart_bnt" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_nt7mn")
+text = "Restart"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_7x0fr")
+
+[node name="Quit_bnt" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_tc43a")
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Restart_bnt" to="." method="_on_restart_bnt_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit_bnt" to="." method="_on_quit_bnt_pressed"]
