@@ -202,6 +202,7 @@ tab_size = 24
 layout_mode = 2
 size_flags_horizontal = 0
 focus_neighbor_top = NodePath("../QuitButton")
+focus_neighbor_bottom = NodePath("../CreditsButton")
 theme = SubResource("Theme_blst4")
 theme_type_variation = &"FlatButton"
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -214,7 +215,7 @@ text = "Start"
 layout_mode = 2
 size_flags_horizontal = 0
 focus_neighbor_top = NodePath("../StartButton")
-focus_neighbor_bottom = NodePath("../QuitButton")
+focus_neighbor_bottom = NodePath("../ControlsButton")
 theme = SubResource("Theme_mt25a")
 theme_type_variation = &"FlatButton"
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -226,7 +227,7 @@ text = "Credits"
 [node name="ControlsButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
-focus_neighbor_top = NodePath("../StartButton")
+focus_neighbor_top = NodePath("../CreditsButton")
 focus_neighbor_bottom = NodePath("../QuitButton")
 theme = SubResource("Theme_mt25a")
 theme_type_variation = &"FlatButton"
@@ -239,6 +240,7 @@ text = "Controls"
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
+focus_neighbor_top = NodePath("../ControlsButton")
 focus_neighbor_bottom = NodePath("../StartButton")
 theme = SubResource("Theme_400oe")
 theme_type_variation = &"FlatButton"
@@ -254,6 +256,6 @@ autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/ControlsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/ControlsButton" to="." method="_on_controls_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ControlsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

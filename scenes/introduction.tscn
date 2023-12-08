@@ -1,50 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://dl6bvx01vp1fr"]
+[gd_scene load_steps=4 format=3 uid="uid://dl6bvx01vp1fr"]
 
 [ext_resource type="Script" path="res://scripts/introduction.gd" id="1_gw326"]
-[ext_resource type="FontFile" uid="uid://dpwrasjjfpd48" path="res://fonts/CLASSIC_.TTF" id="2_n8lpr"]
+[ext_resource type="Theme" uid="uid://b588ktng63i4k" path="res://theme/theme_button.tres" id="2_h7e36"]
 
-[sub_resource type="Theme" id="Theme_jy7i0"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p102b"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_15rqc"]
-bg_color = Color(0.8, 0.8, 0.8, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nwt5h"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bcg8c"]
-bg_color = Color(0, 0, 0, 0)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
-border_color = Color(0, 0, 0, 1)
-border_blend = true
-shadow_size = 6
-
-[sub_resource type="Theme" id="Theme_7a2np"]
-default_font_size = 24
-Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
-Button/font_sizes/font_size = 50
-Button/fonts/font = ExtResource("2_n8lpr")
-Button/styles/disabled = SubResource("StyleBoxFlat_p102b")
-Button/styles/focus = SubResource("StyleBoxFlat_15rqc")
-Button/styles/hover = SubResource("StyleBoxFlat_nwt5h")
-Button/styles/normal = SubResource("StyleBoxFlat_bcg8c")
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cnk24"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uiuyj"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t1tjd"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bmrha"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k8bni"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
+[sub_resource type="Theme" id="Theme_mu6bu"]
 
 [node name="Introduction" type="Node2D"]
 position = Vector2(1278, 3)
@@ -54,31 +13,19 @@ script = ExtResource("1_gw326")
 layout_direction = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = -725.0
-offset_top = 563.0
-offset_right = -421.0
-offset_bottom = 653.0
+offset_left = -861.0
+offset_top = 491.0
+offset_right = -370.0
+offset_bottom = 665.0
 grow_horizontal = 2
 auto_translate = false
 localize_numeral_system = false
-theme = SubResource("Theme_jy7i0")
+theme = SubResource("Theme_mu6bu")
 alignment = 1
 
-[node name="SkipButton" type="Button" parent="VBoxContainer"]
+[node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-theme = SubResource("Theme_7a2np")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_styles/normal = SubResource("StyleBoxFlat_cnk24")
-theme_override_styles/hover = SubResource("StyleBoxFlat_uiuyj")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_t1tjd")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_bmrha")
-theme_override_styles/focus = SubResource("StyleBoxFlat_k8bni")
-text = "Go to the game"
-flat = true
+theme = ExtResource("2_h7e36")
+text = "START"
 
-[connection signal="pressed" from="VBoxContainer/SkipButton" to="." method="_on_skip_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/SkipButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
