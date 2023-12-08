@@ -229,6 +229,7 @@ size = Vector2(13.7397, 17.4874)
 [node name="enemy-skeleton" type="CharacterBody2D" groups=["enemies"]]
 position = Vector2(-18, 0)
 scale = Vector2(2.40179, 2.76278)
+collision_layer = 4
 collision_mask = 23
 script = ExtResource("1_sgrmn")
 
