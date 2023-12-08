@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://c2js0haceodrp"]
+[gd_scene load_steps=19 format=3 uid="uid://c2js0haceodrp"]
 
 [ext_resource type="Texture2D" uid="uid://dyjta52raexen" path="res://img/cave/props2.png" id="2_3m26x"]
 [ext_resource type="Texture2D" uid="uid://b1xmyvuoqn0kq" path="res://img/cave/background1.png" id="2_hm6oq"]
@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://b2bjf2mx17iaj" path="res://characters/enemies/enemy-skeleton.tscn" id="10_qaxwv"]
 [ext_resource type="PackedScene" uid="uid://dofwoj402bvsm" path="res://characters/enemies/enemy_ghost.tscn" id="11_jpn4f"]
 [ext_resource type="PackedScene" uid="uid://1oka26leym5x" path="res://items/gaita.tscn" id="12_ab6ht"]
+[ext_resource type="AudioStream" uid="uid://cwglgbx54o3fx" path="res://sound/Blear Moon - Runaway caves.mp3" id="13_wxok2"]
+[ext_resource type="PackedScene" uid="uid://u8nu6xg2lxws" path="res://scenes/pause_menu.tscn" id="14_vhrok"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1gn3v"]
 texture = ExtResource("6_jx1o5")
@@ -8680,5 +8682,11 @@ position = Vector2(11462, 510)
 
 [node name="gaita" parent="." instance=ExtResource("12_ab6ht")]
 position = Vector2(16182, 68)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_wxok2")
+autoplay = true
+
+[node name="pause_menu" parent="." instance=ExtResource("14_vhrok")]
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
