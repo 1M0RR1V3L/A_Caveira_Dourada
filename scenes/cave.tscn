@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cqvbo6bkeys6a" path="res://characters/player/player.tscn" id="8_1pgbx"]
 [ext_resource type="PackedScene" uid="uid://b2bjf2mx17iaj" path="res://characters/enemies/enemy-skeleton.tscn" id="10_qaxwv"]
 [ext_resource type="PackedScene" uid="uid://dofwoj402bvsm" path="res://characters/enemies/enemy_ghost.tscn" id="11_jpn4f"]
-[ext_resource type="Texture2D" uid="uid://igpboq4bksw6" path="res://img/cave/gaita.png" id="12_uddk2"]
+[ext_resource type="PackedScene" uid="uid://1oka26leym5x" path="res://items/gaita.tscn" id="12_ab6ht"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1gn3v"]
 texture = ExtResource("6_jx1o5")
@@ -8678,9 +8678,7 @@ position = Vector2(7075, 395)
 [node name="enemy-ghost5" parent="ghost" instance=ExtResource("11_jpn4f")]
 position = Vector2(11462, 510)
 
-[node name="Gaita" type="Sprite2D" parent="."]
-position = Vector2(16186, 83)
-scale = Vector2(0.114601, 0.110821)
-texture = ExtResource("12_uddk2")
+[node name="gaita" parent="." instance=ExtResource("12_ab6ht")]
+position = Vector2(16182, 68)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

@@ -71,7 +71,7 @@ shape = SubResource("RectangleShape2D_u0n4b")
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.0547923, 0.0515974)
 sprite_frames = SubResource("SpriteFrames_n5ntw")
-animation = &"collect"
+animation = &"idle"
 autoplay = "idle"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
