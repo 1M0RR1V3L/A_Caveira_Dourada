@@ -4,11 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://bgrgh3nb1ilxb" path="res://img/enemies/3 - Skeleton/Limping_Movement (32 x 32).png" id="2_qip2n"]
 [ext_resource type="Texture2D" uid="uid://b2p5wsbibqtkp" path="res://img/enemies/3 - Skeleton/Crumbling_Into_Bone_Pile (32 x 32).png" id="3_ujby4"]
 [ext_resource type="Texture2D" uid="uid://cj5d40ro56kl6" path="res://img/enemies/3 - Skeleton/Standing (32 x 32).png" id="4_4tmo0"]
-[ext_resource type="PackedScene" uid="uid://binqb4tv4fgt8" path="res://scenes/hitbox.tscn" id="5_1un5r"]
+[ext_resource type="PackedScene" uid="uid://binqb4tv4fgt8" path="res://characters/hitbox.tscn" id="5_1un5r"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k1mj5"]
-radius = 5.41262
-height = 19.3006
+radius = 5.06733
+height = 15.9259
 
 [sub_resource type="Animation" id="Animation_5mvmv"]
 length = 0.001
@@ -91,7 +91,8 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_wf2iv"]
 resource_name = "hurt2"
-length = 0.7
+length = 0.3375
+step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -123,7 +124,7 @@ tracks/2/path = NodePath("texture:frame")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3, 4, 5, 6]
@@ -224,7 +225,7 @@ _data = {
 size = Vector2(13.4993, 3.98778)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rhrcy"]
-size = Vector2(13.7397, 17.4874)
+size = Vector2(13.7397, 13.0304)
 
 [node name="enemy-skeleton" type="CharacterBody2D" groups=["enemies"]]
 position = Vector2(-18, 0)
@@ -238,8 +239,8 @@ position = Vector2(16, -16)
 texture = ExtResource("2_qip2n")
 hframes = 6
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(18.3196, -10.8586)
+[node name="collisionshape" type="CollisionShape2D" parent="."]
+position = Vector2(15.8215, -10.1347)
 shape = SubResource("CapsuleShape2D_k1mj5")
 
 [node name="anim" type="AnimationPlayer" parent="."]
@@ -256,15 +257,16 @@ collision_mask = 6
 
 [node name="hitbox" parent="." instance=ExtResource("5_1un5r")]
 
-[node name="collisiom" type="CollisionShape2D" parent="hitbox"]
-position = Vector2(17.8384, -25.1)
+[node name="collision" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(16.2379, -24.2509)
 shape = SubResource("RectangleShape2D_fxlp1")
 
 [node name="hurtbox" type="Area2D" parent="."]
 collision_layer = 32
 
 [node name="collision" type="CollisionShape2D" parent="hurtbox"]
-position = Vector2(18.1115, -10.1915)
+position = Vector2(16.2379, -8.32495)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_rhrcy")
 debug_color = Color(0.960784, 0.105882, 0.419608, 0.419608)
 

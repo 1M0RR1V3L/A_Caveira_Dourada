@@ -281,7 +281,7 @@ animations = [{
 size = Vector2(46, 76)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onb5b"]
-size = Vector2(47, 71)
+size = Vector2(60, 57)
 
 [node name="player" type="CharacterBody2D"]
 collision_mask = 22
@@ -301,12 +301,11 @@ position = Vector2(1, 3)
 shape = SubResource("RectangleShape2D_ps3p6")
 
 [node name="camera" type="Camera2D" parent="."]
-visible = false
 zoom = Vector2(1.5, 1.5)
+limit_left = 0
+limit_top = 0
 position_smoothing_enabled = true
 drag_horizontal_enabled = true
-drag_left_margin = 0.3
-drag_right_margin = 0.3
 editor_draw_drag_margin = true
 
 [node name="hurtbox" type="Area2D" parent="."]
@@ -314,7 +313,7 @@ collision_layer = 0
 collision_mask = 4
 
 [node name="collision" type="CollisionShape2D" parent="hurtbox"]
-position = Vector2(0.5, 0.5)
+position = Vector2(1, -6.5)
 shape = SubResource("RectangleShape2D_onb5b")
 debug_color = Color(0.768627, 0.0352941, 0.235294, 0.419608)
 
