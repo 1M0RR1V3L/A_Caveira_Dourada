@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c2js0haceodrp"]
+[gd_scene load_steps=17 format=3 uid="uid://c2js0haceodrp"]
 
 [ext_resource type="Texture2D" uid="uid://dyjta52raexen" path="res://img/cave/props2.png" id="2_3m26x"]
 [ext_resource type="Texture2D" uid="uid://b1xmyvuoqn0kq" path="res://img/cave/background1.png" id="2_hm6oq"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cqvbo6bkeys6a" path="res://characters/player/player.tscn" id="8_1pgbx"]
 [ext_resource type="PackedScene" uid="uid://b2bjf2mx17iaj" path="res://characters/enemies/enemy-skeleton.tscn" id="10_qaxwv"]
 [ext_resource type="PackedScene" uid="uid://dofwoj402bvsm" path="res://characters/enemies/enemy_ghost.tscn" id="11_jpn4f"]
+[ext_resource type="PackedScene" uid="uid://1oka26leym5x" path="res://items/gaita.tscn" id="12_ab6ht"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1gn3v"]
 texture = ExtResource("6_jx1o5")
@@ -8590,7 +8591,7 @@ position = Vector2(6608.88, 911)
 shape = SubResource("RectangleShape2D_nkbav")
 
 [node name="player" parent="." instance=ExtResource("8_1pgbx")]
-position = Vector2(419, 503)
+position = Vector2(152, 425)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -8676,5 +8677,8 @@ position = Vector2(7075, 395)
 
 [node name="enemy-ghost5" parent="ghost" instance=ExtResource("11_jpn4f")]
 position = Vector2(11462, 510)
+
+[node name="gaita" parent="." instance=ExtResource("12_ab6ht")]
+position = Vector2(16182, 68)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
