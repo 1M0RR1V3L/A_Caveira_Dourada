@@ -63,6 +63,7 @@ animations = [{
 }]
 
 [node name="gaita" type="Area2D"]
+scale = Vector2(1.76596, 1.81633)
 script = ExtResource("1_2c0as")
 
 [node name="collision" type="CollisionShape2D" parent="."]
