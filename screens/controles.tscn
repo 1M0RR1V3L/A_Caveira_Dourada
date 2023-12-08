@@ -1,0 +1,93 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6qdiipfsr116"]
+
+[ext_resource type="Script" path="res://scripts/controles.gd" id="1_p33cq"]
+[ext_resource type="Theme" uid="uid://bw1l2vtpwhonr" path="res://theme/theme-text-title.tres" id="2_ohguj"]
+[ext_resource type="Theme" uid="uid://btkegqcc6h8sx" path="res://theme/theme-text.tres" id="3_l0jiy"]
+[ext_resource type="Theme" uid="uid://b588ktng63i4k" path="res://theme/theme_button.tres" id="4_vy43i"]
+
+[node name="controels" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p33cq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -1.0
+offset_right = 1278.0
+offset_bottom = 722.0
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -390.0
+offset_top = -275.0
+offset_right = 416.0
+offset_bottom = 295.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_ohguj")
+text = "KEYBOARDS"
+fit_content = true
+autowrap_mode = 0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("2_ohguj")
+text = "MOVIMENTOS"
+fit_content = true
+autowrap_mode = 0
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("3_l0jiy")
+text = "A, <- = ESQUERDA | D,  -> = DIREITA | W, SPACE = PULAR"
+fit_content = true
+autowrap_mode = 0
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("2_ohguj")
+text = "OUTRAS"
+fit_content = true
+autowrap_mode = 0
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme = ExtResource("3_l0jiy")
+text = "ESC = PAUSAR, RESUMIR JOGO | ENTER = CONFIRMAR"
+fit_content = true
+autowrap_mode = 0
+
+[node name="BackButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("4_vy43i")
+text = "BACK TO MAIN MENU"
+
+[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
