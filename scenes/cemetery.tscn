@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3 uid="uid://bd65poouwsk0s"]
+[gd_scene load_steps=77 format=3 uid="uid://bd65poouwsk0s"]
 
 [ext_resource type="Texture2D" uid="uid://cwn7wb5n14gru" path="res://img/cemetery/PNG/Background/Background_01.png" id="1_jpf7c"]
 [ext_resource type="Texture2D" uid="uid://ceqp3m85ei5wp" path="res://img/cemetery/PNG/Background/Background_02.png" id="2_812tl"]
@@ -37,6 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://cqvbo6bkeys6a" path="res://characters/player/player.tscn" id="30_fvsso"]
 [ext_resource type="Script" path="res://scripts/void.gd" id="32_pb5h5"]
 [ext_resource type="PackedScene" uid="uid://b1djeeeq62uke" path="res://scenes/goal.tscn" id="34_rclu1"]
+[ext_resource type="PackedScene" uid="uid://b64rmxidd01lc" path="res://characters/enemies/enemy_ghost.tscn" id="37_0gdir"]
 [ext_resource type="Shader" path="res://shader/transition.gdshader" id="37_ax0my"]
 [ext_resource type="Script" path="res://scripts/transition.gd" id="37_rsopo"]
 [ext_resource type="Script" path="res://scripts/color_react.gd" id="38_7ksp2"]
@@ -656,31 +657,39 @@ next_level = "res://scenes/forest.tscn"
 [node name="player" parent="." instance=ExtResource("30_fvsso")]
 position = Vector2(9590, 337)
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="skeleton" type="Node2D" parent="."]
 
-[node name="enemy-skeleton" parent="Node2D" instance=ExtResource("29_7amyl")]
-position = Vector2(979, 419)
+[node name="enemy-skeleton" parent="skeleton" instance=ExtResource("29_7amyl")]
+position = Vector2(387, 415)
 
-[node name="enemy-skeleton2" parent="Node2D" instance=ExtResource("29_7amyl")]
+[node name="enemy-skeleton2" parent="skeleton" instance=ExtResource("29_7amyl")]
 position = Vector2(1649, 279)
 
-[node name="enemy-skeleton3" parent="Node2D" instance=ExtResource("29_7amyl")]
+[node name="enemy-skeleton3" parent="skeleton" instance=ExtResource("29_7amyl")]
 position = Vector2(2524, 492)
 
-[node name="enemy-skeleton4" parent="Node2D" instance=ExtResource("29_7amyl")]
+[node name="enemy-skeleton4" parent="skeleton" instance=ExtResource("29_7amyl")]
 position = Vector2(3062, 487)
 
-[node name="enemy-skeleton5" parent="Node2D" instance=ExtResource("29_7amyl")]
+[node name="enemy-skeleton5" parent="skeleton" instance=ExtResource("29_7amyl")]
 position = Vector2(4023, 481)
 
-[node name="enemy-skeleton6" parent="Node2D" instance=ExtResource("29_7amyl")]
+[node name="enemy-skeleton6" parent="skeleton" instance=ExtResource("29_7amyl")]
 position = Vector2(5207, 296)
 
-[node name="enemy-skeleton7" parent="Node2D" instance=ExtResource("29_7amyl")]
-position = Vector2(5824, 295)
+[node name="enemy-skeleton7" parent="skeleton" instance=ExtResource("29_7amyl")]
+position = Vector2(5893, 253)
 
-[node name="enemy-skeleton8" parent="Node2D" instance=ExtResource("29_7amyl")]
+[node name="enemy-skeleton8" parent="skeleton" instance=ExtResource("29_7amyl")]
 position = Vector2(115, 488)
+
+[node name="ghost" type="Node2D" parent="."]
+
+[node name="enemy-ghost" parent="ghost" instance=ExtResource("37_0gdir")]
+position = Vector2(3493, 420)
+
+[node name="enemy-ghost2" parent="ghost" instance=ExtResource("37_0gdir")]
+position = Vector2(5527, 245)
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(17, -24)
