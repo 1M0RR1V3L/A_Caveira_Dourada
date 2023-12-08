@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bygsd6bwdmprj"]
+[gd_scene load_steps=21 format=3 uid="uid://bygsd6bwdmprj"]
 
 [ext_resource type="Texture2D" uid="uid://c2th1ar31to7y" path="res://img/forest/bakcground_night1.png" id="1_5sdv2"]
 [ext_resource type="Texture2D" uid="uid://bv4ixsp06thom" path="res://img/forest/mainlevbuild.png" id="1_8qram"]
@@ -12,7 +12,8 @@
 [ext_resource type="Script" path="res://scripts/transition.gd" id="10_4w02t"]
 [ext_resource type="Shader" path="res://shader/transition.gdshader" id="11_vptva"]
 [ext_resource type="Script" path="res://scripts/color_react.gd" id="12_uysyj"]
-[ext_resource type="PackedScene" uid="uid://b64rmxidd01lc" path="res://characters/enemies/enemy_ghost.tscn" id="13_3umkv"]
+[ext_resource type="PackedScene" uid="uid://dofwoj402bvsm" path="res://characters/enemies/enemy_ghost.tscn" id="13_3umkv"]
+[ext_resource type="AudioStream" uid="uid://dvv1w0tosunpb" path="res://sound/deep-in-the-dell-126916.mp3" id="14_wu6sl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b2hbf"]
 texture = ExtResource("1_8qram")
@@ -16164,5 +16165,9 @@ position = Vector2(5936, 350)
 
 [node name="enemy-ghost5" parent="ghost" instance=ExtResource("13_3umkv")]
 position = Vector2(9532, 480)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_wu6sl")
+autoplay = true
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

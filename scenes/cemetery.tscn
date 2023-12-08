@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=3 uid="uid://bd65poouwsk0s"]
+[gd_scene load_steps=78 format=3 uid="uid://bd65poouwsk0s"]
 
 [ext_resource type="Texture2D" uid="uid://cwn7wb5n14gru" path="res://img/cemetery/PNG/Background/Background_01.png" id="1_jpf7c"]
 [ext_resource type="Texture2D" uid="uid://ceqp3m85ei5wp" path="res://img/cemetery/PNG/Background/Background_02.png" id="2_812tl"]
@@ -37,7 +37,8 @@
 [ext_resource type="PackedScene" uid="uid://cqvbo6bkeys6a" path="res://characters/player/player.tscn" id="30_fvsso"]
 [ext_resource type="Script" path="res://scripts/void.gd" id="32_pb5h5"]
 [ext_resource type="PackedScene" uid="uid://b1djeeeq62uke" path="res://scenes/goal.tscn" id="34_rclu1"]
-[ext_resource type="PackedScene" uid="uid://b64rmxidd01lc" path="res://characters/enemies/enemy_ghost.tscn" id="37_0gdir"]
+[ext_resource type="AudioStream" uid="uid://cemuty0lfrj0i" path="res://sound/alone-with-the-darkness-9859.mp3" id="36_i7dj4"]
+[ext_resource type="PackedScene" uid="uid://dofwoj402bvsm" path="res://characters/enemies/enemy_ghost.tscn" id="37_0gdir"]
 [ext_resource type="Shader" path="res://shader/transition.gdshader" id="37_ax0my"]
 [ext_resource type="Script" path="res://scripts/transition.gd" id="37_rsopo"]
 [ext_resource type="Script" path="res://scripts/color_react.gd" id="38_7ksp2"]
@@ -713,5 +714,9 @@ grow_vertical = 2
 color = Color(0.00392157, 0.00392157, 0.00392157, 1)
 script = ExtResource("38_7ksp2")
 metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("36_i7dj4")
+autoplay = true
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
